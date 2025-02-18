@@ -77,12 +77,10 @@ public abstract class GameObject {
 
     public static void clearLevelObjects() {
         // Only remove non-bird objects when loading new levels
-        Array<GameObject> toRemove = new Array<>();
-        for (GameObject obj : gameObjects) {
-            if (!(obj instanceof AngryBird)) {
-                toRemove.add(obj);
-            }
+            Array<GameObject> toRemove = new Array<>(gameObjects);
+        for (GameObject obj : toRemove) {
+            obj.dispose();
         }
-        gameObjects.removeAll(toRemove, true);
+        gameObjects.clear();
     }
 }

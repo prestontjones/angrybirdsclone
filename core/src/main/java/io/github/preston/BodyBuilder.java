@@ -35,10 +35,36 @@ public class BodyBuilder {
     }
 
     public static Body createBox(World world, Vector2 position, float width, float height) {
+
         BodyDef bodyDef = new BodyDef();
         bodyDef.position.set(position);
         bodyDef.type = BodyType.DynamicBody;
+        bodyDef.angle = 0f;
+  
 
+        Body body = world.createBody(bodyDef);
+
+        PolygonShape shape = new PolygonShape();
+        shape.setAsBox(width / 2, height / 2); // Box centered around its position
+
+        FixtureDef fixtureDef = new FixtureDef();
+        fixtureDef.shape = shape;
+        fixtureDef.density = .5f;
+        fixtureDef.friction = .4f;
+        fixtureDef.restitution = .2f; // Controls bounce effect
+
+        body.createFixture(fixtureDef);
+        shape.dispose(); // Clean up shape memory
+        
+        return body;
+    }
+
+    public static Body createBox(World world, Vector2 position, float width, float height, float rotation) {
+        BodyDef bodyDef = new BodyDef();
+        bodyDef.position.set(position);
+        bodyDef.type = BodyType.DynamicBody;
+        bodyDef.angle = rotation; // Set the actual rotation
+        
         Body body = world.createBody(bodyDef);
 
         PolygonShape shape = new PolygonShape();

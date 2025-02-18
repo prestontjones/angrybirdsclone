@@ -18,9 +18,26 @@ public class LevelManager {
         this.gameWorld = gameWorld;
     }
 
-    public void saveLevel(String levelName) {
+    public void saveLevel() {
         Array<GameObjectData> objectData = new Array<>();
-        String filePath = "levels/" + levelName + ".json"; // Save in a "levels" folder
+
+        //Name the new save file and Increase the number is a new one needs to be made
+        int maxLevel = 0;
+        FileHandle levelsDir = Gdx.files.local("levels");
+        if (levelsDir.exists()) {
+            for (FileHandle file : levelsDir.list()) {
+                String name = file.nameWithoutExtension();
+                if (name.startsWith("Level_")) {
+                    try {
+                        int num = Integer.parseInt(name.replace("Level_", ""));
+                        maxLevel = Math.max(maxLevel, num);
+                    } catch (NumberFormatException ignored) {}
+                }
+            }
+        }
+        
+        String levelName = "Level_" + (maxLevel + 1);
+        String filePath = "levels/" + levelName + ".json";
 
         for (GameObject gameObject : GameObject.getGameObjects()) {
             if (gameObject instanceof Box) {
@@ -54,8 +71,8 @@ public class LevelManager {
     
         // Replace the old world
         world.dispose();
-        world = new World(new Vector2(0, -9.8f), true);
-        gameWorld.setWorld(world);
+        world = new World(new Vector2(0, -98.0f), true);
+
     
         // Clear existing game objects
         Array<GameObject> toRemove = new Array<>();
@@ -65,6 +82,7 @@ public class LevelManager {
             }
         }
         GameObject.getGameObjects().removeAll(toRemove, true);
+        gameWorld.setWorld(world);
 
         // Read JSON data
         String jsonData = file.readString();
@@ -83,7 +101,8 @@ public class LevelManager {
                             System.out.println("Missing required fields for box object: " + data);
                             break;
                         }
-                        gameObjects.add(new Box(world, new Vector2(data.x, data.y), data.width, data.height));
+                        gameObjects.add(new Box(world, new Vector2(data.x, data.y), data.width, data.height, data.rotation));
+               
                         break;
                     case "pig":
                         if (data.x == null || data.y == null || data.radius == null) {

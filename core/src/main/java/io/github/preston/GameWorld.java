@@ -57,8 +57,7 @@ public class GameWorld implements InputManager.InputListener {
         uiManager.getLevelUIManager().getSaveLevelButton().addListener(new ChangeListener() {
             @Override
             public void changed(ChangeEvent event, Actor actor) {
-                String levelName = "Level" + (levelManager.getSavedLevels().size + 1); // Default name
-                levelManager.saveLevel(levelName); // Save the level with a default name
+                levelManager.saveLevel(); // Save the level with a default name
                 updateLevelSelector(); // Refresh the level selector
             }
         });

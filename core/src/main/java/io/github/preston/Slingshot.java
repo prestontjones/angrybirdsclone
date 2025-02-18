@@ -41,14 +41,14 @@ public class Slingshot {
         if (!isDragging || loadedBird == null) return;
         
         currentDrag.set(worldPoint);
-        Vector2 pullVector = new Vector2(basePosition).sub(currentDrag);
+        Vector2 pullVector = new Vector2(currentDrag).sub(basePosition);
         
         if (pullVector.len() > MAX_PULL_DISTANCE) {
             pullVector.setLength(MAX_PULL_DISTANCE);
         }
         
         loadedBird.getBody().setTransform(
-            basePosition.cpy().add(pullVector), 
+            basePosition.cpy().sub(pullVector), 
             loadedBird.getBody().getAngle()
         );
         
@@ -82,7 +82,7 @@ public class Slingshot {
     public void setWorld(World newWorld) {
         // Cleanup old bird
         if (loadedBird != null) {
-            loadedBird.getBody().getWorld().destroyBody(loadedBird.getBody());
+            loadedBird = null;
         }
         
         this.world = newWorld;

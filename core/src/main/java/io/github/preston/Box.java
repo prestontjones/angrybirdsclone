@@ -10,6 +10,7 @@ public class Box extends GameObject {
     private final Vector2 position;
     public final float width;
     public final float height;
+    public float rotation;
     private boolean isDragging = false;
     private final Vector2 dragStartPosition = new Vector2();
     private final Vector2 lastPosition = new Vector2();
@@ -21,6 +22,16 @@ public class Box extends GameObject {
         this.position = position;
         this.width = width;
         this.height = height;
+        this.body.setUserData(this); // Set user data to this box
+    }
+
+    public Box(World world, Vector2 position, float width, float height, float rotation) {
+        super(BodyBuilder.createBox(world, position, width, height, rotation), // Pass rotation
+             new Texture("box.png"));   
+        this.position = position;
+        this.width = width;
+        this.height = height;
+        this.rotation = rotation;
         this.body.setUserData(this); // Set user data to this box
     }
 
@@ -113,7 +124,7 @@ public class Box extends GameObject {
             body.getPosition().y, // Y position
             width, // Width
             height, // Height
-            body.getAngle() // Rotation (in radians)
+            body.getAngle() 
         );
     }
 
