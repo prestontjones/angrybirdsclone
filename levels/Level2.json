@@ -1,0 +1,266 @@
+[
+{
+	"class": "io.github.preston.GameObjectData",
+	"type": "bird",
+	"x": 240,
+	"y": 380,
+	"rotation": 0
+},
+{
+	"class": "io.github.preston.GameObjectData",
+	"type": "box",
+	"x": 1564.0707,
+	"y": 317.01553,
+	"width": 244,
+	"height": 25,
+	"rotation": -1.5708443
+},
+{
+	"class": "io.github.preston.GameObjectData",
+	"type": "box",
+	"x": 1041.7031,
+	"y": 317.03305,
+	"width": 244,
+	"height": 25,
+	"rotation": -1.5693448
+},
+{
+	"class": "io.github.preston.GameObjectData",
+	"type": "box",
+	"x": 1346.71,
+	"y": 309.54797,
+	"width": 244,
+	"height": 25,
+	"rotation": 1.7797413E-4
+},
+{
+	"class": "io.github.preston.GameObjectData",
+	"type": "box",
+	"x": 1665.0634,
+	"y": 317.0226,
+	"width": 244,
+	"height": 25,
+	"rotation": -1.5710497
+},
+{
+	"class": "io.github.preston.GameObjectData",
+	"type": "box",
+	"x": 1152.2817,
+	"y": 317.1238,
+	"width": 244,
+	"height": 25,
+	"rotation": -1.5616951
+},
+{
+	"class": "io.github.preston.GameObjectData",
+	"type": "pig",
+	"x": 1090.8473,
+	"y": 219.00497,
+	"radius": 20,
+	"rotation": 0.65608436
+},
+{
+	"class": "io.github.preston.GameObjectData",
+	"type": "pig",
+	"x": 1616,
+	"y": 219.00624,
+	"radius": 20,
+	"rotation": 0
+},
+{
+	"class": "io.github.preston.GameObjectData",
+	"type": "pig",
+	"x": 1342,
+	"y": 219.0066,
+	"radius": 20,
+	"rotation": 0
+},
+{
+	"class": "io.github.preston.GameObjectData",
+	"type": "box",
+	"x": 1340.3646,
+	"y": 578.6726,
+	"width": 244,
+	"height": 25,
+	"rotation": 0.0019396973
+},
+{
+	"class": "io.github.preston.GameObjectData",
+	"type": "box",
+	"x": 1255.1724,
+	"y": 215.51381,
+	"width": 89,
+	"height": 41,
+	"rotation": -1.8248145E-5
+},
+{
+	"class": "io.github.preston.GameObjectData",
+	"type": "box",
+	"x": 1432.0757,
+	"y": 215.5148,
+	"width": 89,
+	"height": 41,
+	"rotation": 5.633623E-6
+},
+{
+	"class": "io.github.preston.GameObjectData",
+	"type": "box",
+	"x": 1270.701,
+	"y": 256.5262,
+	"width": 89,
+	"height": 41,
+	"rotation": -6.3768064E-5
+},
+{
+	"class": "io.github.preston.GameObjectData",
+	"type": "box",
+	"x": 1410.6897,
+	"y": 256.52942,
+	"width": 89,
+	"height": 41,
+	"rotation": 2.7891945E-5
+},
+{
+	"class": "io.github.preston.GameObjectData",
+	"type": "box",
+	"x": 1389.9938,
+	"y": 287.04233,
+	"width": 20,
+	"height": 20,
+	"rotation": 9.913333E-5
+},
+{
+	"class": "io.github.preston.GameObjectData",
+	"type": "box",
+	"x": 1296.1703,
+	"y": 287.03217,
+	"width": 20,
+	"height": 20,
+	"rotation": 4.0519175E-5
+},
+{
+	"class": "io.github.preston.GameObjectData",
+	"type": "box",
+	"x": 1488.0791,
+	"y": 573.99194,
+	"width": 244,
+	"height": 25,
+	"rotation": 2.1318572
+},
+{
+	"class": "io.github.preston.GameObjectData",
+	"type": "box",
+	"x": 1297.6465,
+	"y": 444.0544,
+	"width": 244,
+	"height": 25,
+	"rotation": -1.5705281
+},
+{
+	"class": "io.github.preston.GameObjectData",
+	"type": "box",
+	"x": 1392.5043,
+	"y": 444.17502,
+	"width": 244,
+	"height": 25,
+	"rotation": -1.5619204
+},
+{
+	"class": "io.github.preston.GameObjectData",
+	"type": "box",
+	"x": 1614.4265,
+	"y": 451.53955,
+	"width": 244,
+	"height": 25,
+	"rotation": 1.3623049E-4
+},
+{
+	"class": "io.github.preston.GameObjectData",
+	"type": "box",
+	"x": 1296.8833,
+	"y": 642.103,
+	"width": 102,
+	"height": 43,
+	"rotation": -1.5688523
+},
+{
+	"class": "io.github.preston.GameObjectData",
+	"type": "box",
+	"x": 1344.0233,
+	"y": 715.29205,
+	"width": 102,
+	"height": 43,
+	"rotation": 0.013400573
+},
+{
+	"class": "io.github.preston.GameObjectData",
+	"type": "box",
+	"x": 1392.3964,
+	"y": 643.2563,
+	"width": 102,
+	"height": 43,
+	"rotation": -1.5212982
+},
+{
+	"class": "io.github.preston.GameObjectData",
+	"type": "pig",
+	"x": 1342.4457,
+	"y": 615.18134,
+	"radius": 20,
+	"rotation": 0.27112535
+},
+{
+	"class": "io.github.preston.GameObjectData",
+	"type": "box",
+	"x": 963.10474,
+	"y": 216.51494,
+	"width": 102,
+	"height": 43,
+	"rotation": 1.4063549E-7
+},
+{
+	"class": "io.github.preston.GameObjectData",
+	"type": "box",
+	"x": 978.22577,
+	"y": 259.53052,
+	"width": 102,
+	"height": 43,
+	"rotation": 1.0868663E-5
+},
+{
+	"class": "io.github.preston.GameObjectData",
+	"type": "box",
+	"x": 1073.1945,
+	"y": 485.61682,
+	"width": 102,
+	"height": 43,
+	"rotation": 0.0016099231
+},
+{
+	"class": "io.github.preston.GameObjectData",
+	"type": "box",
+	"x": 1100.027,
+	"y": 451.64508,
+	"width": 244,
+	"height": 25,
+	"rotation": 0.0016094897
+},
+{
+	"class": "io.github.preston.GameObjectData",
+	"type": "box",
+	"x": 1195.6024,
+	"y": 576.3666,
+	"width": 244,
+	"height": 25,
+	"rotation": -2.0898364
+},
+{
+	"class": "io.github.preston.GameObjectData",
+	"type": "box",
+	"x": 1617.374,
+	"y": 485.55518,
+	"width": 102,
+	"height": 43,
+	"rotation": 1.3213042E-4
+}
+]
