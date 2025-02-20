@@ -12,7 +12,6 @@ public class Box extends GameObject {
     public final float height;
     public float rotation;
     private boolean isDragging = false;
-    private final Vector2 dragStartPosition = new Vector2();
     private final Vector2 lastPosition = new Vector2();
     private boolean isGround;
     private boolean isDraggable = true; // Controls whether the box can be dragged
